@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin-top: 30px;
+}
+
+.primary_flex {
+  display: flex;
+}
+
+.nav_container {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav_image {
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.nav_image h1 {
+  color: rgb(17, 17, 17);
+  font-family: Quicksand;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.nav_text li {
+  list-style: none;
+  margin: 20px;
+  color: rgb(254, 163, 1);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#about {
+  color: rgb(1, 172, 253);
+}
+
+#Facilities {
+  color: rgb(5, 212, 223);
+}
+
+#Admission {
+  color: rgb(93, 88, 239);
+}
+
+.button_content button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 12px;
+  background: rgb(254, 163, 1);
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icons {
+  position: absolute;
+  right: 5%;
+  font-size: 2.8rem;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+/* banner style  */
+
+.banner_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.banner_content h1 {
+  font-family: Quicksand;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 61px;
+  margin-bottom: 20px;
+}
+
+.banner_content p {
+  margin-bottom: 20px;
+}
+#Empowering {
+  color: rgb(254, 163, 1);
+}
+
+#towards {
+  color: rgb(1, 172, 253);
+}
+
+.banner_content p {
+  color: rgb(17, 17, 17);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+}
+
+.banner_button button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 12px;
+  background: rgb(254, 163, 1);
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 12px;
+  background: rgb(17, 17, 17);
+}
+
+.image_content img {
+  max-width: 100%;
+  height: auto;
+}
+/* responsive */
+
+@media screen and (max-width: 576px) {
+  header {
+    margin-top: 10px;
+  }
+  .icons {
+    display: block;
+  }
+
+  .nav_image h1 {
+    display: none;
+  }
+  .nav_text,
+  .button_content button {
+    position: absolute;
+    display: none;
+  }
+
+  .nav_image {
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .nav_container {
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 0.5px solid rgb(254, 163, 1);
+  }
+
+  /* banner-responsive */
+
+  .banner_container {
+    flex-direction: column;
+  }
+
+  #order1 {
+    order: 2;
+  }
+
+  #order2 {
+    order: 1;
+  }
+
+  .banner_content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner_content h1 {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  .banner_content p {
+    font-size: 16px;
+  }
+}
