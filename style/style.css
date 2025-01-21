@@ -9,12 +9,17 @@ header {
   margin-top: 30px;
 }
 
+section {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .primary_flex {
   display: flex;
 }
 
 .nav_container {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -78,7 +83,7 @@ header {
 
 .banner_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -116,7 +121,6 @@ header {
 .banner_button button {
   padding: 10px 40px;
   border: none;
-  border-radius: 12px;
   background: rgb(254, 163, 1);
   color: rgb(255, 255, 255);
   font-family: Quicksand;
@@ -132,8 +136,21 @@ header {
 }
 
 /* Standard_Curriculum_container */
+/* .Standard_Curriculum_section {
+  margin-top: 100px;
+} */
+.Standard_Curriculum_section {
+  padding: 60px 0px 60px 0px;
 
-.Standard_Curriculum_container {
+  margin: 0 auto;
+  background-image: url(../assets/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+}
+
+/* .Standard_Curriculum_container {
   width: 78%;
   margin: 0 auto;
   background-image: url(../assets/bg.png);
@@ -141,7 +158,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
-}
+} */
 
 .Standard_Curriculum_icons {
   text-align: center;
@@ -154,8 +171,8 @@ header {
 }
 
 .border-radius {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 30px;
   background: rgb(254, 163, 1);
 }
@@ -164,7 +181,7 @@ header {
   font-size: 24px;
   font-weight: 900;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .Standard_Curriculum_text h3 {
@@ -172,10 +189,8 @@ header {
   font-family: Quicksand;
   font-size: 46px;
   font-weight: 700;
-  line-height: 57.5px;
-  letter-spacing: 0%;
   text-align: center;
-  margin-bottom: 50px;
+  /* margin-top: 50px; */
 }
 
 .Standard_Curriculum_box {
@@ -229,10 +244,126 @@ header {
 .Standard_Curriculum_container {
   display: flex;
   gap: 40px;
+  margin-top: 120px;
+}
+
+/* Our_Stories */
+
+.Our_Stories {
+  width: 100% !important;
+  padding: 0px 0px 60px 0px;
+  background: url(../assets/bg.png),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+.Our_Stories_container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.Our_Stories_content {
+  width: 485px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  box-shadow: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.Our_Stories_button {
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  border-radius: 48px;
+  padding: 10px 40px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: Quicksand, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  background: rgb(60, 216, 232);
+  cursor: pointer;
+}
+
+.text_padding {
+  padding: 30px;
+}
+
+.text_padding h5 {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.text_padding p {
+  color: rgb(102, 102, 102);
+  font-family: Raleway;
+  font-size: 15.34px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.left_side .image-wrapper {
+  margin-bottom: 25px;
+  border-radius: 16px 16px 0px 0px;
+}
+.left_side h5 {
+  margin-bottom: 35px;
+  font-size: 25px;
+}
+
+.left_side p {
+  margin-bottom: 45px;
+}
+
+.right_side .Our_Stories_content {
+  width: 290.69px;
+  height: 300px;
+  margin: 0px 20px 20px;
+}
+
+.right_side .Our_Stories_button {
+  left: 35%;
+}
+
+.right_side .text_padding h5 {
+  font-size: 16px;
+}
+.right_side {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+}
+
+.right_side .text_padding {
+  padding: 20px;
+}
+
+.banner_button {
+  margin-top: 30px;
+  text-align: center;
 }
 /* responsive */
 
 @media screen and (max-width: 576px) {
+  section {
+    width: 100%;
+    margin: 0 auto;
+  }
   header {
     margin-top: 10px;
   }
@@ -294,7 +425,6 @@ header {
     color: rgb(0, 0, 0);
     font-size: 26px;
     text-align: center;
-    margin-top: 50px;
   }
   .Standard_Curriculum_container {
     flex-direction: column;
@@ -304,5 +434,32 @@ header {
 
   .Standard_Curriculum_icons {
     display: none;
+  }
+
+  .Standard_Curriculum_container {
+    display: flex;
+    gap: 10px;
+    margin-top: 0px;
+  }
+
+  .Standard_Curriculum_Bg {
+    padding-top: 0px;
+  }
+
+  .Our_Stories {
+    width: 100% !important;
+  }
+  .left_side {
+    display: none;
+  }
+
+  .right_side .Our_Stories_content {
+    width: 240.69px;
+    height: 270px;
+    margin: 0px 20px 20px;
+  }
+
+  .Our_Stories_button {
+    padding: 10px 30px;
   }
 }
