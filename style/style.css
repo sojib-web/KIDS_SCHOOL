@@ -44,7 +44,6 @@ section {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0%;
-  text-align: left;
 }
 .nav_text li {
   list-style: none;
@@ -242,7 +241,6 @@ section {
   font-size: 24.52px;
   font-weight: 700;
   line-height: 30.65px;
-  letter-spacing: 0%;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -253,7 +251,6 @@ section {
   font-size: 15.09px;
   font-weight: 500;
   line-height: 28.3px;
-  letter-spacing: 0%;
   text-align: center;
 }
 
@@ -320,12 +317,10 @@ section {
   font-family: Raleway;
   font-size: 12px;
   font-weight: 500;
-
   text-transform: capitalize;
   background: rgb(60, 216, 232);
   cursor: pointer;
 }
-
 .text_padding {
   padding: 30px;
 }
@@ -337,7 +332,6 @@ section {
   font-weight: 700;
   margin-top: 30px;
 }
-
 .text_padding p {
   color: rgb(102, 102, 102);
   font-family: Raleway;
@@ -414,8 +408,6 @@ section {
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
-  letter-spacing: 0%;
-  text-align: left;
 }
 
 .footer_container {
@@ -490,9 +482,6 @@ section {
   text-align: left;
 }
 
-.img_wrapper img {
-  filter: brightness(0) invert(1);
-}
 /* responsive */
 
 @media screen and (max-width: 576px) {
